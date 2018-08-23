@@ -16,7 +16,4 @@ class Solution:
                     sub_list.append(l[j][0]+1)
             if l[i][0]+1 not in chain.from_iterable(final_list):
                 final_list.append(sub_list)
-            if((sub_list==[l[i][0]+1])and (l[i][0]+1 not in chain.from_iterable(final_list))):
-                sub_list = [l[i][0]+1]
-                final_list.append(sub_list)
         return(final_list)
